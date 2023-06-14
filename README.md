@@ -1,4 +1,4 @@
-# Nessus-Lab
+# Building a Vulnerability Management Lab (Nessus)
 
 ## Introduction
 
