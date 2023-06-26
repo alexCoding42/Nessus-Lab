@@ -6,7 +6,7 @@ In this project, I utilized Nessus Essentials to perform some vulnerability scan
 First I set up a vulnerable Windows 10 virtual machine, featuring outdated software and disabled security controls. I installed and configured Nessus Essentials to perform unauthenticated and credentialed vulnerability scans against the Windows host. Then I analyzed the scan results, highlighting the difference between unauthenticated and credentialed scans. Finally I remediated some identified vulnerabilities, and verified successful remediation through subsequent scans
 
 ## Lab Architecture
-![Visual](https://www.dropbox.com/s/bjwdn1kujoqo8cs/Nessus%20Lab.jpg?raw=1)
+![Visual](https://www.dropbox.com/s/7uhnduacqwhgyd7/visual.jpg?raw=1)
 
 ## Unauthenticated Scan Results
 Although I installed deprecated softwares on the Windows virtual machine, the scan was not able to identify them as critical vulnerabilities. The scan did not reveal other high vulnerabilities too.
