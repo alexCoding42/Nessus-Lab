@@ -2,20 +2,26 @@
 
 ## Introduction
 
-In this project, I utilized Nessus Essentials to perform some vulnerability scans on a Windows host, identified and remediated some of them.
-First I set up a vulnerable Windows 10 virtual machine, featuring outdated software and disabled security controls. I installed and configured Nessus Essentials to perform unauthenticated and credentialed vulnerability scans against the Windows host. Then I analyzed the scan results, highlighting the difference between unauthenticated and credentialed scans. Finally I remediated some identified vulnerabilities, and verified successful remediation through subsequent scans
+In this project, I utilized Nessus Essentials to perform vulnerability scans on a Windows host, identify, prioritize and remediate some of them.
 
-## Lab Architecture
 ![Visual](https://www.dropbox.com/s/7uhnduacqwhgyd7/visual.jpg?raw=1)
 
+## Steps
+
+1. First I setup an old Windows 10 virtual machine, with outdated software and I disabled security controls and firewalls.
+2. I installed and configured Nessus Essentials to perform unauthenticated and credentialed scans against the Windows host.
+3. I generated comprehensive vulnerability reports to assess and prioritize vulnerabilities according to severity scores.
+4. I analyzed the scan results and reports, highlighting the difference between unauthenticated and credentialed scans.
+5. Finally I remediated some identified vulnerabilities, and verified successful remediation through subsequent scans and reports.
+
 ## Unauthenticated Scan Results
-Although I installed deprecated softwares on the Windows virtual machine, the scan was not able to identify them as critical vulnerabilities. The scan did not reveal other high vulnerabilities too.
+Although I installed deprecated softwares on the Windows virtual machine, the non credentialed scan was not able to identify critical or high vulnerabilities. 
 
 ![Nessus Dashboard](https://www.dropbox.com/s/oajzcmb1np24jj9/Unauthenticated%20scan%20dashboard.jpeg?raw=1)
 ![Nessus Dashboard](https://www.dropbox.com/s/13l5ishhlfnt0q5/Unauthenticated%20scan%20report.jpeg?raw=1)
 
 ## Authenticated Scan Results
-The scan with credentials (SMB) was able to identify many critical and high vulnerabilities, most of them caused by the deprecated softwares installed for purpose.
+The credentialed scan was able to identify many critical and high vulnerabilities, most of them caused by the deprecated softwares installed on the host.
 
 ![Nessus Dashboard](https://www.dropbox.com/s/2bj5bo6p2otnn5y/Authenticated%20scan%20dashboard.jpeg?raw=1)
 ![Nessus Dashboard](https://www.dropbox.com/s/efg23wqrb1ffb5p/Authenticated%20scan%20report.jpeg?raw=1)
