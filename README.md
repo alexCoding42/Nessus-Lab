@@ -17,20 +17,30 @@ In this project, I utilized Nessus Essentials to perform vulnerability scans on 
 ## Unauthenticated Scan Results
 Although I installed deprecated softwares on the Windows virtual machine, the non credentialed scan was not able to identify critical or high vulnerabilities. 
 
-![Nessus Dashboard](https://www.dropbox.com/s/oajzcmb1np24jj9/Unauthenticated%20scan%20dashboard.jpeg?raw=1)
-![Nessus Dashboard](https://www.dropbox.com/s/13l5ishhlfnt0q5/Unauthenticated%20scan%20report.jpeg?raw=1)
+![Non credentialed report](https://www.dropbox.com/s/g6lb0j83ow2bk4r/non-credentialed-screenshot.png?raw=1)
 
 ## Authenticated Scan Results
 The credentialed scan was able to identify many critical and high vulnerabilities, most of them caused by the deprecated softwares installed on the host.
 
-![Nessus Dashboard](https://www.dropbox.com/s/2bj5bo6p2otnn5y/Authenticated%20scan%20dashboard.jpeg?raw=1)
-![Nessus Dashboard](https://www.dropbox.com/s/efg23wqrb1ffb5p/Authenticated%20scan%20report.jpeg?raw=1)
+![Credentialed report before remediation](https://www.dropbox.com/s/h6lfjhq2mjdh3to/credentialed-screenshot-with-deprecated-softwares.png?raw=1)
 
-## Remediation + Authenticated Scan Results
-As remediation I uninstalled the deprecated softwares, and run a new authenticated scan. This time most of the critical and high vulnerabilities were not detected, but some of them still exist because of the version of Windows which is used (Windows 10 Pro 22H2)
+## Remediation
 
-![Nessus Dashboard](https://www.dropbox.com/s/wzl5hxwijgevbqw/Authenticated%20scan%20after%20remediation%20dashboard.jpeg?raw=1)
-![Nessus Dashboard](https://www.dropbox.com/s/33wcp4txj8uokj7/Authenticated%20scan%20after%20remediation%20report.jpeg?raw=1)
+1. First step of remediation, I analyzed carefully the Nessus generated report about credentialed scan
+2. I noticed that many vulnerabilities could be addressed by removing deprecated softwares and installing the latest Windows updates
+3. So I removed the deprecated softwares that were install for purpose, and runned Windows update
+
+![Removing deprecated softwares](https://www.dropbox.com/s/tdn0mr74v6ry5qy/removing-softwares.png?raw=1)
+![Latest Windows updates](https://www.dropbox.com/s/7onuppl3hsktp44/updating-windows.png?raw=1)
+
+## Post Remediation Authenticated Scan Results
+
+Now that I removed the deprecated softwares and installed the latest Windows updates, I can see that critical and high vulnerabilities have been reduced drastically. And all vulnerabilties caused by deprecated softwares don't appear anymore.
+There are still some critical and high vulnerabilities that were not remediated in this lab, I suppose that it is due to the deprecated Windows host itself (Windows 10 22H2)
+
+![Post remediation scan](https://www.dropbox.com/s/2o9i5lgob3kol3i/credentialed-scan-post-remediation.png?raw=1)
 
 ## Conclusion
-In this project, Nessus scanner was used to identify, understand and remediate some vulnerabilities. Only authenticated scans can go deeply and find vulnerabilities, the unauthenticated scan only scrathes the surface. We noticed that the more deprecated softwares are the more critical and high vulnerabilities could be identified. So as a good practice for remediation and mitigation it is important to keep our machine and softwares up to date.
+In this project, Nessus scanner was used to identify, understand and remediate some vulnerabilities. Generated reports were used to assess and prioritize vulnerabilities. Only authenticated scans can go deeply and find vulnerabilities, the unauthenticated scan only scrathes the surface. 
+We noticed that the more deprecated softwares are the more critical and high vulnerabilities could be identified. Same for updates, a Windows machine should always has the latest updates. 
+So as a good practice for remediation and mitigation it is important to keep our machine and softwares up to date.
