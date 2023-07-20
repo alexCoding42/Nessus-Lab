@@ -2,17 +2,17 @@
 
 ## Introduction
 
-In this project, I utilized Nessus Essentials to perform vulnerability scans on a Windows host, identify, prioritize and remediate some of them.
+In this project, I utilized Nessus Essentials to perform vulnerability scans on a Windows host, identify, assess, prioritize and remediate some of them.
 
 ![Visual](https://www.dropbox.com/s/7uhnduacqwhgyd7/visual.jpg?raw=1)
 
 ## Steps
 
-1. First I setup an old Windows 10 virtual machine, with outdated software and I disabled security controls and firewalls.
+1. I setup a vulnerable Windows 10 virtual machine, with outdated software and I disabled security controls and firewalls.
 2. I installed and configured Nessus Essentials to perform unauthenticated and credentialed scans against the Windows host.
 3. I generated comprehensive vulnerability reports to assess and prioritize vulnerabilities according to severity scores.
 4. I analyzed the scan results and reports, highlighting the difference between unauthenticated and credentialed scans.
-5. Finally I remediated some identified vulnerabilities, and verified successful remediation through subsequent scans and reports.
+5. I remediated most critical and highest identified vulnerabilities, and verified successful remediation through subsequent scans and reports.
 
 ## Unauthenticated Scan Results
 Although I installed deprecated softwares on the Windows virtual machine, the non credentialed scan was not able to identify critical or high vulnerabilities. 
