@@ -15,7 +15,7 @@ In this project, I utilized Nessus scan to perform vulnerability scanning on a W
 5. Remediated most critical and highest identified vulnerabilities, and verified successful remediation through subsequent scans and reports.
 
 ## Preparation and Scope
-The specific requirements is to be able to detect critical and hight vulnerabilities caused by the deprecated softwares installed on the Windows 10 VM.
+The specific requirements is to be able to detect critical and high vulnerabilities caused by the deprecated softwares installed on the Windows 10 VM.
 The system and network infrastructure are simple : it is only a Windows 10 vulnerable virtual machine for which the security controls and firewalls have been disabled.
 
 ## Information Gathering
