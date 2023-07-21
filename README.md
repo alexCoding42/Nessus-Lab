@@ -40,7 +40,7 @@ By analyzing the report of the authenticated scan we can see that there is a lot
 Critical vulnerabilities have a high severity score, so they can potentially impact the host.
 
 ## Recommendations
-We recommand to remediate ni the first time critical vulnerabilities, then high vulnerabilities.
+We recommand to remediate in the first time critical vulnerabilities, then high vulnerabilities.
 
 ## Remediation Planning
 As most of critical and high vulnerabilities are caused by the deprecated softwares and a lack of Windows updates, we plan to remove the deprecated softwares from the system and install the latest Windows updates.
