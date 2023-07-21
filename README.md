@@ -9,7 +9,7 @@ In this project, I utilized Nessus scan to perform vulnerability scanning on a W
 ## Steps
 
 1. Setup a vulnerable Windows 10 virtual machine, with outdated software and I disabled security controls and firewalls.
-2. Installed and configured Nessus on another Linux Virtual Machine to perform unauthenticated and credentialed scans against the Windows VM.
+2. Installed and configured Nessus on my local machine to perform unauthenticated and credentialed scans against the Windows VM.
 3. Generated comprehensive vulnerability reports to assess and prioritize vulnerabilities according to severity scores.
 4. Analyzed the scan results and reports, highlighting the difference between unauthenticated and credentialed scans.
 5. Remediated most critical and highest identified vulnerabilities, and verified successful remediation through subsequent scans and reports.
