@@ -34,10 +34,13 @@ The credentialed scan was able to identify many critical and high vulnerabilitie
 ![Credentialed report before remediation](https://www.dropbox.com/s/h6lfjhq2mjdh3to/credentialed-screenshot-with-deprecated-softwares.png?raw=1)
 
 ## Prioritize Vulnerabilities
-By analyzing the report of the authenticated scan we can see that there is a lot of critical and high vulnerabilities, but also some medium vulnerabilities and a bunch of informational ones. We exclude the informational vulnerabilities because there is no score for them, and we decide to prioritize only critical and high vulnerabilities.
+By analyzing the report of the authenticated scan we can see that there is a lot of critical and high vulnerabilities, but also some medium vulnerabilities and a bunch of informational ones. In order to allow us to prioritize and assess the vulnerabilities easily, we customize the report with Excel using pivot tables. So that we can extract only the most necessary information and take decisions accordingly. We exclude the informational vulnerabilities because there is no score for them, and we decide to prioritize only critical and high vulnerabilities.
+
+![Excel report with pivot tables](https://www.dropbox.com/scl/fi/tlqok3cuzg7tmnvkvjiar/vulnerability_name.png?rlkey=2ghypgb8le4tnwkjh8k431lmu&raw=1)
+![Excel report with pivot tables](https://www.dropbox.com/scl/fi/f09aryl2i8pna324u3a66/asset_ip.png?rlkey=oz0ct4wiiiqndxrwiqv609g9w&raw=1)
 
 ## Risk Assessment
-Critical vulnerabilities have a high severity score, so they can potentially impact the host.
+We see that critical and high vulnerabilities have a high severity score, so they can potentially impact the host.
 
 ## Recommendations
 We recommand to remediate in the first time critical vulnerabilities, then high vulnerabilities.
